@@ -12,12 +12,6 @@
 
 <head>
 
-<script type="text/javascript">
-function hello()
-{
-  <?php echo "rdtfyuioipo[srdyyuisrdyhiopfyguo"?>;
-}
-</script>
  
 <style>
   
@@ -31,7 +25,7 @@ function hello()
 </style>
 
 <link rel="stylesheet" href="css/bootstrap.css">
-  
+
 </head>
 <body style="background: #2c3338;
   color: #606468;">

@@ -28,9 +28,10 @@ p {
 after { clear: both; }
 
 #login {
-  margin: 5%;
+  
   width: 400px;
 }
+
 
 #login form {
   margin: auto;
