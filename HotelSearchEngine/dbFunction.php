@@ -170,7 +170,7 @@ public function productDetail($id)
 			
 			//$d = date_create()->format('Y-m-d');
 		
-			$password = md5($password);
+			$password = ($password);
 			//mysqli_query($this->db, "INSERT INTO `userdetails`(  `password`,  `email`) VALUES ('$password','$email')");
 			$query = "INSERT INTO `userdetails`(  `password`,  `email`) VALUES ('$password','$email')";
 			$q = mysqli_query($this->db,$query);
@@ -194,7 +194,7 @@ public function productDetail($id)
 		}
 
 		public function ChangePassword($id,$password){
-			$query="UPDATE userdetails SET password='md5($password)' WHERE userId='$id' ";
+			$query="UPDATE userdetails SET password='sha256($password)' WHERE userId='$id' ";
 			$q=$this->db->query($query);
 			return $q;
 

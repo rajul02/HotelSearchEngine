@@ -14,7 +14,7 @@
 
     $email = $_POST['userName'];
 
-    $password =md5($_POST['password']);
+    $password =sha256($_POST['password']);
 
     $user = $funObj->Register($password,$email);
     if($user==true){

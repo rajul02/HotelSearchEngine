@@ -12,7 +12,7 @@ include_once 'dbConnect.php';
 $funObj = new dbFunction($conn);
   if(isset($_POST['login'])){
    $userName = $_POST['userName'];
-   $pass = md5($_POST['password']);
+   $pass = sha256($_POST['password']);
 
    $user = $funObj->Login($pass,$userName);
    echo $user;

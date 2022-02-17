@@ -60,7 +60,7 @@ alert('Changes Saved');
         $new=$_POST['newpassword'];
         $old=$_POST['cpassword'];
         $id=$_SESSION['userId'];
-       if(md5($old)==$data['password']){
+       if(sha256($old)==$data['password']){
 		$user = $funObj->ChangePassword($id,$new);
 		if($user===True){
          echo "<script>
